@@ -48,6 +48,4 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/rafki-3078/rafki-3078/output/snake.svg" alt="Snake animation" />
-
 ###
