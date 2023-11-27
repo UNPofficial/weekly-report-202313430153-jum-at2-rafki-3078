@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+Create By 23343078_Muhammad Rafki
+
 int main() {
     FILE *file;
     file = fopen("datamahasiswa.txt", "w");
