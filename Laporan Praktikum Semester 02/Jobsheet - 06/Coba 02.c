@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define UKURAN 5
+
 void push(int);
 void pop();
 void display();
@@ -31,6 +32,7 @@ int main() {
 		}
 	}
 }
+
 void push(int value) {
 	if(atas == UKURAN-1)
 		printf("\nStack telah penuh, Tidak memungkinkan menambah item");
@@ -49,6 +51,7 @@ void pop() {
 		atas--;
 	}
 }
+
 void display() {
 	if(atas == -1)
 		printf("\nStack kosong. Tidak ada item yang bisa ditampilkan");
