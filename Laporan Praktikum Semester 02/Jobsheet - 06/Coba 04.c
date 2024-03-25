@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 struct Node {
 	int data;
 	struct Node *next;
 }*atas = NULL;
+
 void push(int);
 void pop();
 void tampilkan();
+
 int main() {
 	int pilihan, value;
 	printf("\n== Stack Menggunakan Linked List ==\n");
@@ -32,6 +35,7 @@ int main() {
 							}
 	}
 }
+
 void push(int value) {
 	struct Node *newNode;
 	newNode = (struct Node*)malloc(sizeof(struct Node));
@@ -43,6 +47,7 @@ void push(int value) {
 	atas = newNode;
 	printf("\nItem berhasil ditambahkan\n");
 }
+
 void pop() {
 	if(atas == NULL)
 		printf("\nStack kosong!!!\n");
@@ -53,6 +58,7 @@ void pop() {
 		free(temp);
 	}
 }
+
 void tampilkan() {
 	if(atas == NULL)
 		printf("\nStack kosong!!!\n");
